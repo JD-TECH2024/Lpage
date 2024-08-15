@@ -1,0 +1,175 @@
+/*De modo geral, adicionei icones dentro dos input para os nomes e Email, adicionei um text area
+  Ajustei um pouquinho a "media"
+*/
+
+
+* {
+    font-family: poppinsregular;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+/* ---- Nota Tirei essa linha de código devido a um problema com o texto
+h2{
+    font-size: 56px;
+    line-height: 20px; -- essa em especifico
+    font-family: poppinsmedium;
+}
+*/
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+span {
+    color: rgb(132, 14, 201);
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img {
+    width: 570px;
+}
+
+#conta-btn {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#conta-btn:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#submit {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    /*Add by me*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+/* Mudei isso para uma classe
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}*/
+/*R*/
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.formInput,
+textarea::-webkit-scrollbar {
+    margin-top: 20px;
+    height: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+/*Add by me*/
+.formInput[placeholder="Nome"] {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 4% 50%;
+    padding-left: 55px;
+
+}
+
+.formInput[placeholder="Email"] {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 4% 50%;
+    padding-left: 55px;
+   
+}
+
+#project-description {
+   
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 25px;
+    font-size: 16px;
+    min-height: 4rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    resize: none;
+}
+
+
+/*Diminuindo o span dentro do H2*/
+aside h2 {
+    font-size: 56px;
+    line-height: auto;
+    font-family: poppinsmedium;
+    font-size: 2.3rem;
+}
